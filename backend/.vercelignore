@@ -1,0 +1,28 @@
+# .vercelignore (project root)
+
+# Python virtual environments — these are often gigabytes
+.venv/
+venv/
+env/
+
+# Python caches and compiled files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node modules (if any)
+node_modules/
+
+# Local build outputs, logs, and data
+outputs/
+build/
+dist/
+*.log
+
+# Git and local config
+.git/
+.env
+.env.*

@@ -1,14 +1,7 @@
-# .vercelignore (in project root)
-.venv/
+// This file is used to specify intentionally untracked files that Git should ignore. Files already tracked by Git are not affected.
+.env
 venv/
+audio_files/
 __pycache__/
 *.pyc
-node_modules/
-.git/
-.env
-.env.*
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
-.ipynb_checkpoints/
-*.log
+temp_*
