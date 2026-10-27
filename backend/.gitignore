@@ -5,4 +5,3 @@ audio_files/
 __pycache__/
 *.pyc
 temp_*
-.requirements.txt
