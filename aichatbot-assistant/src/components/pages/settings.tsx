@@ -37,7 +37,7 @@ const SettingsPage: React.FC = () => {
     
     setIsGenerating(true);
     try {
-      const res = await axios.post(
+      await axios.post(
         `${API_URL}/api/device/generate`, 
         { device_name: newDeviceName }, 
         { withCredentials: true }
@@ -68,7 +68,7 @@ const SettingsPage: React.FC = () => {
         filters: [{ namePrefix: 'ESP32' }],
         optionalServices: ['battery_service'],
       });
-      const server = await device.gatt?.connect();
+      await device.gatt?.connect();
       setBluetoothDevice(device);
       device.addEventListener('gattserverdisconnected', () => setBluetoothDevice(null));
     } catch (error) {

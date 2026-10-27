@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom'; // Assuming you use react-router
 import { MessageSquare, User, Settings, LogOut, Bot } from 'lucide-react';
 import styles from '../pagesmodulecss/sidebar.module.css';
