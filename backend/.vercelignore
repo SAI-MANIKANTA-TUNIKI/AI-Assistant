@@ -1,9 +1,11 @@
 # .vercelignore (project root)
 
-# Python virtual environments — these are often gigabytes
+# Python virtual environments — these are often the biggest culprits
 .venv/
 venv/
 env/
+.venv-*
+**/.venv-*
 
 # Python caches and compiled files
 __pycache__/
@@ -13,16 +15,14 @@ __pycache__/
 .ruff_cache/
 .mypy_cache/
 
-# Node modules (if any)
+# Node modules
 node_modules/
 
-# Local build outputs, logs, and data
+# Local build/run artifacts
 outputs/
 build/
 dist/
+.vercel/
+_uv/
+session/
 *.log
-
-# Git and local config
-.git/
-.env
-.env.*
