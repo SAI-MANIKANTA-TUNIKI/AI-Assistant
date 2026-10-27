@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Menu, Search, Bell } from 'lucide-react';
 import styles from '../pagesmodulecss/navbar.module.css';
 
