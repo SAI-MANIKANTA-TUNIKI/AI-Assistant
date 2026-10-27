@@ -1,7 +1,14 @@
-// This file is used to specify intentionally untracked files that Git should ignore. Files already tracked by Git are not affected.
-.env
+# .vercelignore (in project root)
+.venv/
 venv/
-audio_files/
 __pycache__/
 *.pyc
-temp_*
+node_modules/
+.git/
+.env
+.env.*
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+*.log
